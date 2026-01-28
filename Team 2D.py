@@ -13,3 +13,9 @@ t.width(8)
 def draw_circle(radius, color):
     t.pencolor(color)
     t.circle(radius)
+
+#Center the drawing
+t.penup()
+t.goto(0, -120)
+t.setheading(0)
+t.pendown()
