@@ -11,6 +11,6 @@ def square(turtle, side_length):
     turtle.forward(side_length)
     turtle.penup()
 
-if __name__ == "__main__":
+if __name__ == "__main__": # This block will only run if this file is executed directly
     good_boy = Turtle()
     square(good_boy, 100)
