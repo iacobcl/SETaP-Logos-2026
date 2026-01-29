@@ -1,8 +1,8 @@
 import turtle
 t = turtle.Turtle()
-def drawT(startcoords):
+def drawT(startx, starty):
     t.penup()
-    t.goto(startcoords)
+    t.goto(startx, starty)
     t.setheading(0)
     t.pendown()
     t.fillcolor("lightblue")

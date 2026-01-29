@@ -3,8 +3,8 @@ t = turtle.Turtle()
 t.color("black", "white")
 t.pensize(5)
 
-def drawH():#
-
+def drawH(startx, starty):
+    t.goto(startx, starty)
     # Draw the left vertical bar
     t.left(90)
     t.forward(100)

@@ -12,8 +12,8 @@ t.pensize(5)
 
 
 #function to draw a F letter
-def drawF(startcoords):
-    t.goto(startcoords)
+def drawF(startx, starty):
+    t.goto(startx, starty)
     #drawing straight F
     t.left(90)
     t.forward(100)
