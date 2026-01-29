@@ -34,6 +34,8 @@ t.forward(100)
 t.right(90)
 t.forward(85)
 
+# e's
+
 t.teleport(p[0]+80,p[1]-35)
 make_e(t,radius=50)
 
