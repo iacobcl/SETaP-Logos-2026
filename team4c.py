@@ -64,6 +64,8 @@ def drawR(startx, starty):
 def drawH(startx, starty):
     t.penup()
     t.goto(startx, starty)
+    t.pendown()
+    t.setheading(360)
     # Draw the left vertical bar
     t.left(90)
     t.forward(100)
@@ -100,6 +102,8 @@ def drawH(startx, starty):
 def drawF(startx, starty):
     t.penup()
     t.goto(startx, starty)
+    t.pendown()
+    t.setheading(360)
     #drawing straight F
     t.left(90)
     t.forward(100)
@@ -131,7 +135,6 @@ def drawF(startx, starty):
     t.forward(20)
 
 def drawHanger(startx, starty):
-    t = turtle
     
     t.penup()
     t.goto(startx, starty)
@@ -165,3 +168,4 @@ drawT(-500, 100)
 drawH(-400, 100)
 drawR(-300, 100)
 drawF(-100, 100)
+drawT(0, 100)
