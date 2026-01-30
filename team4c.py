@@ -60,7 +60,50 @@ def drawR(startx, starty):
     t.right(90)
     t.forward(20)
     t.circle(-25, 165)
+
+def drawY(start_x,start_y):
+    t.fillcolor("lightblue")
+    t.begin_fill()
+    t.penup()
+    t.goto(start_x, start_y)
+    t.setheading(0)
+    t.pendown()
     
+    #start_x, start_y = x, y  # Save starting position
+    
+    t.left(135)
+    t.forward(50)
+
+    t.left(45)
+    t.forward(30)
+
+    t.left(135)
+    t.forward(60)
+
+    t.right(45)
+    t.forward(50)
+
+    t.left(90)
+    t.forward(20)
+
+    t.left(90)
+    t.forward(50)
+
+    t.right(45)
+    t.forward(60)
+
+    t.left(135)
+    t.forward(30)
+
+    t.left(45)
+    t.forward(50)
+
+    t.goto(start_x, start_y)  # Explicitly return to starting position
+    
+    t.end_fill()
+    t.penup()
+    t.goto(0,0)
+
 def drawH(startx, starty):
     t.penup()
     t.goto(startx, starty)
@@ -167,5 +210,6 @@ def drawHanger(startx, starty):
 drawT(-500, 100)
 drawH(-400, 100)
 drawR(-300, 100)
+drawY(-200, 100)
 drawF(-100, 100)
 drawT(0, 100)
