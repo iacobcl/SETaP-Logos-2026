@@ -7,7 +7,7 @@ def mid_top():
     t.forward(200)
     t.pendown()
 
-def left_shield():
+def left_shield(): 
     mid_top()
     t.left(215)
     t.circle(150, 90)
