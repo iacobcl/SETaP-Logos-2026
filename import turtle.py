@@ -1,5 +1,5 @@
 import turtle
-
+ 
 def mid_top(divider):
     t.penup()
     t.home()
