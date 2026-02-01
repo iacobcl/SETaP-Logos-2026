@@ -169,6 +169,7 @@ def draw_dumbbell_bar():
     t.end_fill()
 
 def draw_dumbbell_weights():
+    # Top-left outer weight 
     t.penup()
     t.goto(-140, 180)
     t.setheading(315)
@@ -189,6 +190,7 @@ def draw_dumbbell_weights():
     t.forward(80)
     t.end_fill()
     
+    # Top-left inner weight 
     t.penup()
     t.goto(-140, 180)
     t.setheading(315)
@@ -209,7 +211,7 @@ def draw_dumbbell_weights():
     t.forward(90)
     t.end_fill()
  
-    
+    # Bottom-right outer weight 
     t.penup()
     t.goto(-140, 180)
     t.setheading(315)
@@ -230,7 +232,7 @@ def draw_dumbbell_weights():
     t.forward(80)
     t.end_fill()
     
-    
+    # Bottom-right inner weight 
     t.penup()
     t.goto(-140, 180)
     t.setheading(315)
