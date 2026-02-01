@@ -150,11 +150,30 @@ def draw_handle():
     t.circle(10)
     t.end_fill()
 
+def draw_dumbbell_bar():
+    t.penup()
+    t.goto(-140, 180)  
+    t.pendown()
+    
+    
+    t.color("gray")
+    t.begin_fill()
+    t.setheading(315)  
+    t.forward(450)
+    t.right(90)
+    t.forward(20)
+    t.right(90)
+    t.forward(450)
+    t.right(90)
+    t.forward(20)
+    t.end_fill()
+
 screan = turtle.Screen()
 t = turtle.Turtle()
 t.speed(0)
 
 sheild()
+draw_dumbbell_bar()
 draw_straight_blade()
 draw_guard()
 draw_handle()
