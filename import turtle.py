@@ -33,11 +33,13 @@ def left_shield(divider):
     bottom_angle = divider / 1.15 if divider != 0 else 1
 
     mid_top(divider)
+    t.begin_fill()
     t.left(215)
     t.circle(150 // top_divider, 90)
 
     t.right(105)
     t.circle(-350 // max(divider, 1), 90 * bottom_angle)
+    t.end_fill()
 
 
 def right_shield(divider):
@@ -45,25 +47,23 @@ def right_shield(divider):
     bottom_angle = divider / 1.15 if divider != 0 else 1
 
     mid_top(divider)
+    t.begin_fill()
     t.right(215)
     t.circle(-150 // top_divider, 90)
 
     t.left(105)
     t.circle(350 // max(divider, 1), 90 * bottom_angle)
+    t.end_fill()
 
 
 def sheild():
     t.color("blue")
-    t.begin_fill()
     left_shield(0)
     right_shield(0)
-    t.end_fill()
     
     t.color("skyblue")
-    t.begin_fill()
     left_shield(1.2)
     right_shield(1.2)
-    t.end_fill()
     mid_top(1)
 
 
