@@ -53,10 +53,17 @@ def right_shield(divider):
 
 
 def sheild():
+    t.color("blue")
+    t.begin_fill()
     left_shield(0)
-    left_shield(1.2)
     right_shield(0)
+    t.end_fill()
+    
+    t.color("skyblue")
+    t.begin_fill()
+    left_shield(1.2)
     right_shield(1.2)
+    t.end_fill()
     mid_top(1)
 
 
