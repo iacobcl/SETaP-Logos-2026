@@ -1,12 +1,9 @@
-
 import turtle
 t = turtle.Turtle()
-t.speed(4)
-
-
-
+t.speed(20)
 #start position
-t.width(5)
+
+t.width(8)
 t.up()
 t.goto(0,70)
 t.circle(0,250)
@@ -36,14 +33,17 @@ t.goto(160,-59)
 t.up()
 
 #fitcheck
-t.goto(-10,-65)
+t.goto(-8,-75)
 t.write(
-    "F i t C h e c k",
+    "FitCheck",
     align="center",
-    font=("Brush Script MT", 45, "italic")
+    font=("Courier New", 50, "bold")
 )
+t.up()
+t.goto(-108, -230)
+t.down()
 t.ht()
-t.done()
+t.circle(230,360)
 
 
 
